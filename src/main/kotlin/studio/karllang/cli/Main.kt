@@ -1,4 +1,4 @@
-package studio.karllang.karlcli
+package studio.karllang.cli
 
 fun main(args: Array<String>) {
     // TODO: Check if Karl jar is in the same directory as the jar file.

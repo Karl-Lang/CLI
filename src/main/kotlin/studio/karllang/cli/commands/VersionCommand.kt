@@ -1,6 +1,6 @@
-package studio.karllang.karlcli.commands
+package studio.karllang.cli.commands
 
-import studio.karllang.karlcli.Constants
+import studio.karllang.cli.Constants
 
 class VersionCommand : Command(
     name = "version",

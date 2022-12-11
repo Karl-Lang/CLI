@@ -1,4 +1,4 @@
-package studio.karllang.karlcli.commands
+package studio.karllang.cli.commands
 
 abstract class Command(
     val name: String,
