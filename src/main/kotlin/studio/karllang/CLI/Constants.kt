@@ -19,6 +19,8 @@ class Constants {
         const val CYAN: String = "\u001B[36m"
         const val WHITE: String = "\u001B[37m"
 
+        const val ERROR_TITLE: String = "$BOLD${RED}Error:$RESET"
+
         val commands: MutableSet<Class<out Command>> = run {
             (org.slf4j.LoggerFactory.getLogger("org.reflections") as Logger).level = ch.qos.logback.classic.Level.OFF
             org.reflections.Reflections("studio.karllang.CLI.commands").getSubTypesOf(Command::class.java)
