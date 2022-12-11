@@ -14,6 +14,9 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+
+    implementation("org.reflections:reflections:0.10.2")
+    implementation("ch.qos.logback:logback-classic:1.4.5")
 }
 
 tasks.test {
