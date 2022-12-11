@@ -6,6 +6,6 @@ abstract class Command(
     val usage: String,
     val longOptionName: String,
     val shortOptionName: String
-    ) {
+) {
     abstract fun execute(args: Array<String>)
 }
