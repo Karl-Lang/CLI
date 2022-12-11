@@ -1,3 +1,3 @@
 
-rootProject.name = "cli"
+rootProject.name = "CLI"
 

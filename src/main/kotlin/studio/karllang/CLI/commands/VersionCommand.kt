@@ -1,6 +1,6 @@
-package studio.karllang.cli.commands
+package studio.karllang.CLI.commands
 
-import studio.karllang.cli.Constants
+import studio.karllang.CLI.Constants
 
 class VersionCommand : Command(
     name = "version",
@@ -10,6 +10,6 @@ class VersionCommand : Command(
     usage = ""
 ) {
     override fun execute(args: Array<String>) {
-        println("KarlCLI ${Constants.version}")
+        println("KarlCLI ${Constants.VERSION}")
     }
 }

@@ -1,6 +1,6 @@
-package studio.karllang.cli.commands
+package studio.karllang.CLI.commands
 
-import studio.karllang.cli.Constants
+import studio.karllang.CLI.Constants
 
 class HelpCommand : Command(
     name = "help",

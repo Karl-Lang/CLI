@@ -1,6 +1,12 @@
-package studio.karllang.cli
+package studio.karllang.CLI
+
+import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
+    if (args.isEmpty()) {
+        println("${Constants.BOLD}${Constants.RED}Error:${Constants.RESET} Empty arguments")
+        exitProcess(0)
+    }
     // TODO: Check if Karl jar is in the same directory as the jar file.
 
     val command = Constants.commands.find {
@@ -13,6 +19,6 @@ fun main(args: Array<String>) {
         instance.execute(args)
     } else run {
         // TODO: If it's a path, run it.
-        println("Unknown command: ${args[0]}")
+        println("${Constants.BOLD}${Constants.RED}Error:${Constants.RESET} Unknown command: ${args[0]}")
     }
 }
